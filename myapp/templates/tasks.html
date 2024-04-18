@@ -1,0 +1,27 @@
+{% extends 'layaouts/base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tareas</title>
+</head>
+<body>
+    {% for task in tasks %}
+    <div>
+        <!-- para los jinga conditional debe estar bien escrtito repestando espacios aqui por ejemplo debe ir == separado no puede estar junto y luego false igual hay que dar un espacio y escribir false sino no lo interpreta como valido-->
+        <h1>{% if task.done == False %} ⏰ {% else %} ✅ {% endif %}      {{task.title}} </h1>
+        
+        <p>{{task.description}}</p>
+        <p>project:{{task.project.name}}</p>
+        <button>Delete</button>
+        <button> ✅done</button>
+        
+
+
+    </div>
+    {% endfor %}
+</body>
+</html>
+{% endblock %}

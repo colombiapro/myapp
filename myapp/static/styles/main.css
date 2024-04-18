@@ -1,0 +1,58 @@
+body{
+    background: #333;
+    color: whitesmoke;
+}
+
+.navbar{
+    background: #444;
+    padding: 20px 0;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    
+}
+.navbar ul li a:hover{
+   color: aquamarine; 
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.card{
+    background: white;
+    
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 5px solid #000;
+}
+.card a:hover{
+    color: aquamarine;
+    
+}
+.input{
+    background:wheat ;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    border: 2px solid #000;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
